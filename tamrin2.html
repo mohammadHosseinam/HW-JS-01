@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+   <script>
+       //////////////////////    first solotion    //////////////////////////
+       yourAge= +prompt("please inter your age")
+       futurAge= yourAge + 56
+       if(18<=yourAge && yourAge<=20){
+           console.log("your age is suitbale");
+           console.log(`56 years later your age will be ${futurAge}`);
+       }
+       //////////////////////    seconde solotion    ////////////////////////// 
+       yourCurrentAge= +prompt("please inter your age")
+       yourFuturAge= yourCurrentAge + 56
+       switch (yourCurrentAge) {
+           case 18:
+               console.log("your age is suitbale");
+               console.log(`56 years later your age will be ${ yourFuturAge}`);
+               break;
+            case 19:
+               console.log("your age is suitbale");
+               console.log(`56 years later your age will be ${ yourFuturAge}`);
+               break;
+            case 20:
+               console.log("your age is suitbale");
+               console.log(`56 years later your age will be ${ yourFuturAge}`);
+               break;
+           default:
+               break;
+       }
+   </script> 
+</body>
+</html>

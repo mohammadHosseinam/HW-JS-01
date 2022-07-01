@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        //////////////////////    first solotion    //////////////////////////
+        const firstNumber = +prompt("please inter first number:")
+        const operator = prompt("please inter operator:")
+        const secoundNumber = +prompt("please inter secound number:")
+        switch (operator) {
+            case "*":
+                console.log(firstNumber * secoundNumber);
+                break;
+            case "+":
+                console.log(firstNumber + secoundNumber);
+                break;
+            case "-":
+                console.log(firstNumber - secoundNumber);
+                break;
+            case "/":
+                console.log(firstNumber / secoundNumber);
+                break;
+        }
+        //////////////////////    secound solotion    //////////////////////////
+        const number1 = +prompt("please inter first number:")
+        const mathOperator = prompt("please inter operator:")
+        const number2 = +prompt("please inter secound number:")
+        let result = 0;
+        switch (mathOperator) {
+            case "*":
+                result= number1 * number2;
+                break;
+            case "+":
+                result= number1 + number2;
+                break;
+            case "-":
+                result= number1 - number2;
+                break;
+            case "/":
+                result= number1 / number2;
+                break;
+        }
+        console.log(`the result of ${number1} ${mathOperator} ${number2} is ${result}`);
+        //////////////////////    third solotion    //////////////////////////
+        let jsCalculated = 0
+        function jsCalculator(){
+            const number1 = +prompt("please inter first number:")
+            const mathOperator = prompt("please inter operator:")
+            const number2 = +prompt("please inter secound number:")
+            let result = 0;
+            switch (mathOperator) {
+            case "*":
+                result= number1 * number2;
+                return `the result of ${number1} ${mathOperator} ${number2} is ${result}`
+                break;
+            case "+":
+                result= number1 + number2;
+                return `the result of ${number1} ${mathOperator} ${number2} is ${result}`
+                break;
+            case "-":
+                result= number1 - number2;
+                return `the result of ${number1} ${mathOperator} ${number2} is ${result}`
+                break;
+            case "/":
+                result= number1 / number2;
+                return `the result of ${number1} ${mathOperator} ${number2} is ${result}`
+                break;
+            }
+        }
+        jsCalculated = jsCalculator();
+        console.log(jsCalculated);
+        //////////////////////    fourth solotion    //////////////////////////
+        let numberCalculated = 0
+        const numberOne = +prompt("please inter first number:")
+        const mathOperation = prompt("please inter operator:")
+        const numberTwo = +prompt("please inter secound number:")
+        function jsCalculator( number1 , mathOperation , number2 ){
+            let result = 0;
+            switch (mathOperation) {
+            case "*":
+                result= number1 * number2;
+                return `the result of ${number1} ${mathOperation} ${number2} is ${result}`
+                break;
+            case "+":
+                result= number1 + number2;
+                return `the result of ${number1} ${mathOperation} ${number2} is ${result}`
+                break;
+            case "-":
+                result= number1 - number2;
+                return `the result of ${number1} ${mathOperation} ${number2} is ${result}`
+                break;
+            case "/":
+                result= number1 / number2;
+                return `the result of ${number1} ${mathOperation} ${number2} is ${result}`
+                break;
+            }
+        }
+        jsCalculated = jsCalculator(numberOne , mathOperation ,numberTwo );
+        console.log(jsCalculated);
+    </script>
+</body>
+</html>
